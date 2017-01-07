@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Eduweb: Front-End Dev Bootcamp</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <h1>Czat z użyciem Node.js i WebSockets</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="inputNick">Podaj nick</label>
+                <input type="text" class="form-control" id="inputNick" placeholder="Nick">
+              </div>
+              <div class="form-group">
+                <button class="btn btn-default" id="btnJoin">Dołącz</button>
+              </div>
+              <div class="form-group">
+                <textarea name="inputMessage" id="inputMessage" cols="30" rows="5" class="form-control" placeholder="Podaj treść wiadomości"></textarea>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-default" id="btnSendMessage" disabled="disabled">Wyślij</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div id="chat-window" class="well" style="height:300px; overflow-y: scroll;"></div>
+            </div>
+          </div>
+        </div>
+        <script src="script.js"></script>
+
+    </body>
+</html>
